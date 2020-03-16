@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #50E6E6;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #50E6E6;
+}
+
+a:hover {
+  color: #50E6E6;
+}
+
+body {
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Oswald";
+  text-align: center;
+}
+
+svg {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4em;
+  padding: 20px;
+  letter-spacing: 20px;
+}
+
+h2 {
+font-weight: bolder;
+font-size: 2em;
+letter-spacing: 5px;
+ padding: 10px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'Dorsa', sans-serif;
+  padding: 5px;
+  letter-spacing: 8px;
+  font-size: 2em;
+}
+
+
+/* ///////////////////////////////// */
+/* NAVIGATION BAR */
+
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  height: 42px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  /* display: none; */
+  /* visibility: hidden; */
+  font-family: "Oswald";
+  /* padding: 0 0 2em 50px; */
+  position: absolute;
+  background-color: #434242;
+  text-align: center;
+  /* opacity: 0;
+  transition: opacity .75s; */
+
+}
+
+/* nav ul li:hover ul {
+  visibility: visible;
+  opacity: 100;
+} */
+
+nav ul li ul li {
+  padding: 1.75em;
+
+}
+
+nav ul li ul li:hover {
+filter: url("#turbulence");
+}
+
+nav ul li ul a {
+  color: #50E6E6;
+  text-decoration: none;
+  font-size: 5em;
+}
+
+.hide {
+  display: none;
+  /* opacity: 0; */
+}
+
+.exit {
+  position: relative;
+  width: 28px;
+  height: auto;
+  padding-bottom: 7px;
+  top: 5px;
+  left: 5px;
+}
+
+.dropmenu {
+  border-radius: 0 0 5px 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  opacity: 100;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.ham-drop {
+  width: 33px;
+}
+
+.ulink {
+  text-decoration: underline;
+}
+
+.navbar {
+  width: 100%;
+  height: 38;
+  background-color: #262626;
+  font-family: 'Dorsa', sans-serif;
+  position: relative;
+  z-index: 101;
+}
+
+.ham {
+  position: relative;
+  width: 33px;
+  padding: 8px;
+  top: 6px;
+}
+
+
+.name {
+  position: absolute;
+  right: 40px;
+  top: 20%;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+
+.nav-logo {
+  position: absolute;
+  width: 20px;
+  height: auto;
+  right: 10px;
+  top: 15%;
+}
+
+.new-line {
+  padding-top: 50px;
+}
+
+.retailers {
+  padding-bottom: 50px;
+}
+
+.retailers a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  text-decoration: none;
+}
+
+hr {
+  margin: 50px 0 0 0;
+}
+
+.row {
+  display: flex;
+  margin: 3% 10%;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+/* ///////////////////////////////// */
+/* FOOTER */
+.social {
+  color: white;
+  width: 20px;
+  height: auto;
+  padding-right: 30px;
+}
+
+.l-column {
+  width: 50%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.r-column {
+  width: 50%;
+  text-align: right;
+}
+
+.lowrow {
+  margin: 10px 3% 0;
+}
+
+.cta {
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.footer-text {
+  padding-bottom: 3px;
+}
+
+.TC {
+  font-size: .5em;
+}
+
+footer {
+  height: 100px;
+
+}

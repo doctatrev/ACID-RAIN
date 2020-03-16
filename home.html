@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACID RAIN TECHNOLOGY - Home</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Dorsa&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="svg">
+    <svg>
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.001 0.001"></feTurbulence>
+        <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
+        keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite"/>
+      </filter>
+    </svg>
+  </div>
+  <div class="navbar">
+    <nav>
+      <ul class="icons">
+        <li class="ham-drop">
+          <a href="#"><img src="assets/HAMBURGER.svg" id="ham" class="ham"></a>
+          <a href="#"><img src="assets/EXIT.svg" id="exit" class="hide exit"></a>
+          <div id="dropmenu" class="dropmenu hide">
+            <ul class="dropmenu">
+              <!-- <li class="ulink"><a href="tote.html">Tote</a></li>
+              <li class="ulink"><a href="#">Login/Create</a></li> -->
+              <li class="menu" ><a href="about.html">About</a></li>
+              <li class="menu" ><a href="home.html">Modules</a></li>
+              <li class="menu" ><a href="retailers.html">Retailers</a></li>
+              <li class="menu" ><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <ul>
+      <li>
+        <p class="name">ACID RAIN TECHNOLOGY</p>
+      </li>
+      <li><a href="home.html"><img class="nav-logo" src="assets/LOGO.png" alt="logo"></a></li>
+    </ul>
+  </div>
+
+
+  <div class="row">
+
+    <div class="p-column column">
+      <a href="navigator.html"><img class="product-image tinted-image" src="assets/Navigator_Black_1080x.png" alt=""></a>
+      <a class="hide-show" href="navigator.html">
+        <h1 class="product">NAVIGATOR</h1>
+      </a>
+      <a class="hide-show" href="navigator.html">
+        <p>PLAYABLE VOLTAGE UTILITY</p>
+      </a>
+    </div>
+    <div class="p-column column">
+      <a href="chainsaw.html"><img class="product-image tinted-image" src="assets/Chainsaw_Black_1080x.png" alt=""></a>
+      <a class="hide-show" href="chainsaw.html">
+        <h1 class="product">CHAINSAW</h1>
+      </a>
+      <a class="hide-show" href="chainsaw.html">
+        <p>3 VOICE 21 OSCILLATOR STEREO VCO</p>
+      </a>
+    </div>
+    <div class="p-column column">
+      <a href="switchblade.html"><img class="product-image tinted-image" src="assets/Switchblade_Black_1080x.png" alt=""></a>
+      <a class="hide-show" href="switchblade.html">
+        <h1 class="product">SWITCHBLADE</h1>
+      </a>
+      <a class="hide-show" href="switchblade.html">
+        <p>3 CHANNEL SWITCH AND MIXER</p>
+      </a>
+    </div>
+
+  </div>
+  <footer>
+    <hr>
+    <div class="lowrow row">
+      <div class="l-column column">
+        <h3 class="cta">FOLLOW US</h3>
+        <a href="https://www.instagram.com/acidraintech/"><img class="social" src="assets/instagram.png" alt=""> </a>
+        <a href="https://www.youtube.com/channel/UC2L1nCATGJoyeczUKrOTfOw"><img class="social" src="assets/youtube.png" alt=""> </a>
+      </div>
+      <div class="r-column column">
+        <p class="footer-text">Copyright © 2020 Acid Rain Technology</p>
+        <p class="footer-text TC">Web Design and Development by Trevor Clark</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

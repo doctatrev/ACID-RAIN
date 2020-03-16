@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACID RAIN TECHNOLOGY - CHAINSAW</title>
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+
+<link href="https://fonts.googleapis.com/css?family=Dorsa&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="svg">
+    <svg>
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.001 0.001"></feTurbulence>
+        <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite" />
+      </filter>
+    </svg>
+  </div>
+  <div class="navbar">
+    <nav>
+      <ul class="icons">
+        <li class="ham-drop">
+          <a href="#"><img src="assets/HAMBURGER.svg" id="ham" class="ham"></a>
+          <a href="#"><img src="assets/EXIT.svg" id="exit" class="hide exit"></a>
+          <div id="dropmenu" class="dropmenu hide">
+            <ul class="dropmenu">
+              <!-- <li class="ulink"><a href="tote.html">Tote</a></li>
+              <li class="ulink"><a href="#">Login/Create</a></li> -->
+              <li class="menu"><a href="about.html">About</a></li>
+              <li class="menu"><a href="home.html">Modules</a></li>
+              <li class="menu"><a href="retailers.html">Retailers</a></li>
+              <li class="menu"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <ul>
+      <li>
+        <p class="name">ACID RAIN TECHNOLOGY</p>
+      </li>
+      <li><a href="home.html"><img class="nav-logo" src="assets/LOGO.png" alt="logo"></a></li>
+    </ul>
+  </div>
+
+  <div class="row module-page">
+    <div class="column product-image">
+      <img src="assets/Chainsaw_Black_1080x.png" alt="chainsaw" class="product-image">
+    </div>
+    <div class="column product-info">
+
+      <ul>
+        <li>
+          <h1>Chainsaw</h1>
+        </li>
+        <li>
+          <h2>$269</h2>
+        </li>
+        <li>
+          <p>Chainsaw is a powerful digital oscillator designed to bring polyphony to your rack in a compact and playable interface. We were inspired by the super-saw; a mainstay of electronic music production, and a waveform rich with harmonics for
+            filters and effects to chew on. Chainsaw features 3 voices of 7 waves, with individual pitch control per voice. All waves morph from super saw to super square for giant hollow basslines and more.</p>
+        </li>
+        <li>
+          <p>4HP</p>
+        </li>
+        <li>
+          <p>35mm Deep</p>
+        </li>
+        <li>
+          <p>110 mA on +12V, 10 mA on -12V, 0 mA on +5V</p>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=-FXsXyBQQfw&feature=emb_title">
+            <p>DEMOS</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://cdn.shopify.com/s/files/1/0053/9151/5766/files/Chainsaw_Manual_1.0.pdf?588">
+            <p>MANUAL</p>
+          </a>
+
+        </li>
+        <li><a href="tote.html" class="myButton">ADD TO TOTE</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <footer>
+    <hr>
+    <div class="lowrow row">
+      <div class="l-column column">
+        <h3 class="cta">FOLLOW US</h3>
+        <a href="https://www.instagram.com/acidraintech/"><img class="social" src="assets/instagram.png" alt=""> </a>
+        <a href="https://www.youtube.com/channel/UC2L1nCATGJoyeczUKrOTfOw"><img class="social" src="assets/youtube.png" alt=""> </a>
+      </div>
+      <div class="r-column column">
+        <p class="footer-text">Copyright © 2020 Acid Rain Technology</p>
+        <p class="footer-text TC">Web Design and Development by Trevor Clark</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACID RAIN TECHNOLOGY - Retailers</title>
+  <link rel="stylesheet" href="css/retailers.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Dorsa&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="svg">
+
+
+    <svg>
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.001 0.001"></feTurbulence>
+        <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
+        keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite"/>
+      </filter>
+    </svg>
+  </div>
+  <div class="navbar">
+    <nav>
+      <ul class="icons">
+        <li class="ham-drop">
+          <a href="#"><img src="assets/HAMBURGER.svg" id="ham" class="ham"></a>
+          <a href="#"><img src="assets/EXIT.svg" id="exit" class="hide exit"></a>
+          <div id="dropmenu" class="dropmenu hide">
+            <ul class="dropmenu">
+              <!-- <li class="ulink"><a href="tote.html">Tote</a></li>
+              <li class="ulink"><a href="#">Login/Create</a></li> -->
+              <li class="menu" ><a href="about.html">About</a></li>
+              <li class="menu" ><a href="home.html">Modules</a></li>
+              <li class="menu" ><a href="retailers.html">Retailers</a></li>
+              <li class="menu" ><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <ul>
+      <li>
+        <p class="name">ACID RAIN TECHNOLOGY</p>
+      </li>
+      <li><a href="home.html"><img class="nav-logo" src="assets/LOGO.png" alt="logo"></a></li>
+    </ul>
+  </div>
+<div class="retailers">
+
+
+  <h1>USA</h1>
+  <h2><a href="https://www.perfectcircuit.com/">PERFECT CIRCUIT AUDIO</a></h2>
+  <h3>Burbank, CA</h3>
+  <h2><a href="https://www.detroitmodular.com/">DETROIT MODULAR</a></h2>
+  <h3>Royal Oak, MI</h3>
+  <h2><a href="https://patchwerks.com/">PATCHWERKS</a></h2>
+  <h3>Seattle, WA</h3>
+  <h2><a href="https://nerdaudio.com/">NERD AUDIO</a></h2>
+  <h3>Chicago, IL</h3>
+  <h2><a href="https://rocknrollvintage.com/pages/synth-city/?gclid=CjwKCAiA-vLyBRBWEiwAzOkGVGHhTpBr4Vc2IvcvAxyf7jzxh8ATGG8727WXHQdRoQbZWEV96-YLQBoCmjAQAvD_BwE">SYNTH CITY</a></h2>
+  <h3>Chicago, IL</h3>
+  <h2><a href="https://www.chucklevins.com/">CHUCK LEVIN'S</a></h2>
+  <h3>Wheaton, MD</h3>
+  <h2><a href="http://www.analoguehaven.com/">ANALOGUE HAVEN</a></h2>
+  <h3>Santa Monica, CA</h3>
+
+  <h1 class="new-line">EUROPE</h1>
+  <h2><a href="https://www.midiamsterdam.nl/">MIDI AMSTERDAM</a></h2>
+  <h3>Amsterdam, Netherlands</h3>
+  <h2><a href="https://www.schneidersladen.de/en/">SCHNEIDERSLADEN</a></h2>
+  <h3>Berlin, Germany</h3>
+  <h2><a href="https://elevatorsound.com/">ELEVATOR SOUND</a></h2>
+  <h3>Bristol, United Kingdom</h3>
+  <h2><a href="https://www.signalsounds.com/">SIGNAL SOUNDS</a></h2>
+  <h3>Glasgow, Scotland</h3>
+
+  <h1 class="new-line">ASIA</h1>
+  <h2><a href="https://miyaji.co.jp/">MIYAJI MUSIC</a></h2>
+  <h3>Tokyo, Japan</h3>
+</div>
+</body>
+<footer>
+  <hr>
+  <div class="lowrow row">
+    <div class="l-column column">
+      <p class="cta">FOLLOW US</p>
+      <a href="https://www.instagram.com/acidraintech/"><img class="social" src="assets/instagram.png" alt=""> </a>
+      <a href="https://www.youtube.com/channel/UC2L1nCATGJoyeczUKrOTfOw"><img class="social" src="assets/youtube.png" alt=""> </a>
+    </div>
+    <div class="r-column column">
+      <p class="footer-text">Copyright © 2020 Acid Rain Technology</p>
+      <p class="footer-text TC">Web Design and Development by Trevor Clark</p>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</html>

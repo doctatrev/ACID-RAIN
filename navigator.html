@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACID RAIN TECHNOLOGY - NAVIGATOR</title>
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Dorsa&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="svg">
+    <svg>
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.001 0.001"></feTurbulence>
+        <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite" />
+      </filter>
+    </svg>
+  </div>
+  <div class="navbar">
+    <nav>
+      <ul class="icons">
+        <li class="ham-drop">
+          <a href="#"><img src="assets/HAMBURGER.svg" id="ham" class="ham"></a>
+          <a href="#"><img src="assets/EXIT.svg" id="exit" class="hide exit"></a>
+          <div id="dropmenu" class="dropmenu hide">
+            <ul class="dropmenu">
+              <!-- <li class="ulink"><a href="tote.html">Tote</a></li>
+              <li class="ulink"><a href="#">Login/Create</a></li> -->
+              <li class="menu"><a href="about.html">About</a></li>
+              <li class="menu"><a href="home.html">Modules</a></li>
+              <li class="menu"><a href="retailers.html">Retailers</a></li>
+              <li class="menu"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <ul>
+      <li>
+        <p class="name">ACID RAIN TECHNOLOGY</p>
+      </li>
+      <li><a href="home.html"><img class="nav-logo" src="assets/LOGO.png" alt="logo"></a></li>
+    </ul>
+  </div>
+
+  <div class="row module-page">
+    <div class="column product-image">
+      <img src="assets/Navigator_Black_1080x.png" alt="navigator" class="product-image">
+    </div>
+    <div class="column product-info">
+
+      <ul>
+        <li>
+          <h1>Navigator</h1>
+        </li>
+        <li>
+          <h2>$89</h2>
+        </li>
+        <li>
+          <p>Navigator is a compact, multi-use voltage utility designed to bring playable control to CV sources in your rack. The combination of normalled voltages and mixing allows you to attenuate, polarize and offset signals to modulate parameters
+            exactly within the sweet spot of another module’s CV input. Navigator is a compact, multi-use voltage utility designed to bring playable control to CV sources in your rack. The combination of normalled voltages and mixing allows you to
+            attenuate, polarize and offset signals to modulate parameters exactly within the sweet spot of another module’s CV input.</p>
+        </li>
+        <li>
+          <p>4HP</p>
+        </li>
+        <li>
+          <p>25mm Deep</p>
+        </li>
+        <li>
+          <p>11 mA on +12V, 8 mA on -12V, 0 mA on +5V</p>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=NNwnMRZjHis&feature=emb_title">
+            <p>DEMOS</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://cdn.shopify.com/s/files/1/0053/9151/5766/files/Navigator_Manual.pdf?588">
+            <p>MANUAL</p>
+          </a>
+
+        </li>
+        <li><a href="tote.html" class="myButton">ADD TO TOTE</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <footer>
+    <hr>
+    <div class="lowrow row">
+      <div class="l-column column">
+        <h3 class="cta">FOLLOW US</h3>
+        <a href="https://www.instagram.com/acidraintech/"><img class="social" src="assets/instagram.png" alt=""> </a>
+        <a href="https://www.youtube.com/channel/UC2L1nCATGJoyeczUKrOTfOw"><img class="social" src="assets/youtube.png" alt=""> </a>
+      </div>
+      <div class="r-column column">
+        <p class="footer-text">Copyright © 2020 Acid Rain Technology</p>
+        <p class="footer-text TC">Web Design and Development by Trevor Clark</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

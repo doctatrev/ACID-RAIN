@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACID RAIN TECHNOLOGY</title>
+  <link href="https://fonts.googleapis.com/css?family=Dorsa&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+
+
+</head>
+
+<body>
+  <div class="">
+
+  </div>
+  <svg>
+    <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+      <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.01 0.01" filterUnits="userSpaceOnUse"></feTurbulence>
+      <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+      <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="12s" keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite" />
+    </filter>
+  </svg>
+  <svg>
+    <filter id="turbulence2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.01 0.01"></feTurbulence>
+      <feDisplacementMap scale="5" in="SourceGraphic"></feDisplacementMap>
+      <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite" />
+    </filter>
+  </svg>
+
+  <div class="hero-image">
+    <img class="hero-image" src="assets/ACID-RAIN-BG.gif" alt="trippy bg">
+    <img class="hero-logo trippy" src="assets/TRIPPY LOGO.svg" alt="trippy-logo">
+  </div>
+
+  <div class="sub-hero-image hero-image">
+    <div class="shadow">
+      <div class="circle">
+      </div>
+      <a href="home.html"><img id="hero-logo" class="hero-logo logo" src="assets/LOGO.svg" alt="logo"></a>
+      <p class="name-low hide">DOUCHE-BAGGERY</p>
+    </div>
+
+  </div>
+</body>
+
+</html>

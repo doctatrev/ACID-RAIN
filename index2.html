@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACID RAIN TECHNOLOGY</title>
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <canvas id="canvas" width="1440" height="788"></canvas>
+  <svg>
+    <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+      <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.01 0.01"></feTurbulence>
+      <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+      <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="120s" keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite" />
+    </filter>
+  </svg>
+<!-- <canvas id="canvas1" width="300" height="300"></canvas> -->
+  <script src="land.js"></script>
+</body>
+
+</html>

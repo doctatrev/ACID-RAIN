@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACID RAIN TECHNOLOGY - Contact</title>
+  <link href="https://fonts.googleapis.com/css?family=Dorsa&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+</head>
+
+<body>
+  <div class="svg">
+
+
+    <svg>
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="1" seed="1" baseFrequency="0.001 0.001"></feTurbulence>
+        <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s"
+        keyTimes="0;0.5;1" values="0.01 0.01;0.02 0.06;0.01 0.01" repeatCount="indefinite"/>
+      </filter>
+    </svg>
+  </div>
+  <div class="navbar">
+    <nav>
+      <ul class="icons">
+        <li class="ham-drop">
+          <a href="#"><img src="assets/HAMBURGER.svg" id="ham" class="ham"></a>
+          <a href="#"><img src="assets/EXIT.svg" id="exit" class="hide exit"></a>
+          <div id="dropmenu" class="dropmenu hide">
+            <ul class="dropmenu">
+              <!-- <li class="ulink"><a href="tote.html">Tote</a></li>
+              <li class="ulink"><a href="#">Login/Create</a></li> -->
+              <li class="menu" ><a href="about.html">About</a></li>
+              <li class="menu" ><a href="home.html">Modules</a></li>
+              <li class="menu" ><a href="retailers.html">Retailers</a></li>
+              <li class="menu" ><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <ul>
+      <li>
+        <p class="name">ACID RAIN TECHNOLOGY</p>
+      </li>
+      <li><a href="home.html"><img class="nav-logo" src="assets/LOGO.png" alt="logo"></a></li>
+    </ul>
+  </div>
+
+
+
+    <div class="container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email">
+
+
+        <!-- <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="china">China</option>
+          <option value="india">India</option>
+          <option value="japan">Japan</option>
+          <option value="mexico">Mexico</option>
+          <option value="russia">Russia</option>
+          <option value="spain">Spain</option>
+          <option value="usa">U.S.A.</option>
+          <option value="united kingdom">United Kingdom</option>
+        </select> -->
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="We would love to hear from you!  Module ideas, technical issues or just a hello :)" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+    <footer>
+      <hr>
+      <div class="lowrow row">
+        <div class="l-column column">
+          <p class="cta">FOLLOW US</p>
+          <a href="https://www.instagram.com/acidraintech/"><img class="social" src="assets/instagram.png" alt=""> </a>
+          <a href="https://www.youtube.com/channel/UC2L1nCATGJoyeczUKrOTfOw"><img class="social" src="assets/youtube.png" alt=""> </a>
+        </div>
+        <div class="r-column column">
+          <p class="footer-text">Copyright © 2020 Acid Rain Technology</p>
+          <p class="footer-text TC">Web Design and Development by Trevor Clark</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dorsa', sans-serif;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  background-color: black;
+}
+
+svg {
+  position: absolute;
+  width: 0;
+  height: auto;
+  overflow: visible;
+}
+
+.hero-image {
+  background-color: #cccccc;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.hero-logo {
+  position: fixed;
+  display: block;
+  top: 20%;
+  left: 40%;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trippy {
+  animation: logoAnim 1.5s infinite alternate;
+  animation-delay: .5s;
+}
+
+.circle {
+  visibility: hidden;
+  opacity: 0;
+  background-color: red;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 40px 50px rgba(255, 0, 0, .67),
+    0px 0px 50px 100px rgba(255, 165, 0, 0.67),
+    0px 0px 75px 150px rgba(255, 255, 0, 0.67),
+    0px 0px 100px 200px rgba(0, 255, 0, 0.67),
+    0px 0px 125px 250px rgba(0, 0, 255, 0.67),
+    0px 0px 150px 300px rgba(128, 0, 128, 0.67);
+  transition: visibility 1s, opacity 1s;
+}
+
+.shadow:hover .circle {
+  visibility: visible;
+  opacity: 1;
+  filter: url("#turbulence");
+}
+
+.shadow:hover .name-low {
+  filter: url("#turbulence2");
+}
+
+.sub-hero-image {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+
+}
+
+.name-low {
+  position: absolute;
+  font-size: 10em;
+  z-index: 1;
+  bottom: 1px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 15%);
+}
+
+.hide {
+  display: block;
+}
+
+.show {
+  display: none;
+}
+
+@keyframes logoAnim {
+  from {
+    transform: scale(1);
+    /* transform: translateY(0%); */
+  }
+
+  to {
+    transform: scale(.9);
+    /* transform: translateY(40%); */
+  }
+}
+
+/* //////////////////////////////////// */
+/* BREAKPOINTS */
+/* @media (max-width: 1366px) {
+
+  .circle {
+    visibility: visible;
+    opacity: 100;
+    filter: url("#turbulence");
+  }
+
+  .name-low {
+    top: 800px;
+  }
+  .hero-logo {
+    position: fixed;
+    display: block;
+    top: 20%;
+    left: 37.5%;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+
+.name-low {
+  top: 1000px;
+}
+
+  .hero-logo {
+    position: fixed;
+    display: block;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 812px) {
+
+
+  .name-low {
+    font-size: 3em;
+    top: 750px;
+  }
+
+  .hero-logo {
+    position: fixed;
+    display: block;
+    top: 7%;
+    left: 35%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .name-low {
+    top: 850px;
+    font-size: 3.75em;
+  }
+
+  .hero-logo {
+    position: fixed;
+    display: block;
+    top: 30%;
+    left: 33%;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+
+
+
+  .name-top {
+    position: relative;
+    top: 50px;
+    font-size: 3.75em;
+    z-index: 1;
+    filter: url("#turbulence2");
+  }
+
+  .name-low {
+    position: relative;
+    top: 600px;
+    font-size: 3.75em;
+    filter: url("#turbulence2");
+  }
+
+  .hero-logo {
+    position: fixed;
+    display: block;
+    top: 33%;
+    left: 26%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+} */
