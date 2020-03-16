@@ -112,17 +112,22 @@ svg {
 
 /* //////////////////////////////////// */
 /* BREAKPOINTS */
-/* @media (max-width: 1366px) {
+
+
+@media (max-width: 1366px) {
 
   .circle {
     visibility: visible;
     opacity: 100;
     filter: url("#turbulence");
+    top: 70%;
   }
 
   .name-low {
     top: 800px;
+    filter: url("#turbulence2");
   }
+
   .hero-logo {
     position: fixed;
     display: block;
@@ -138,14 +143,16 @@ svg {
 
 .name-low {
   top: 1000px;
+  filter: url("#turbulence2");
+
 }
 
   .hero-logo {
     position: fixed;
     display: block;
     top: 25%;
-    left: 30%;
-    width: 40%;
+    left: 35%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -157,12 +164,14 @@ svg {
   .name-low {
     font-size: 3em;
     top: 750px;
+    filter: url("#turbulence2");
+
   }
 
   .hero-logo {
     position: fixed;
     display: block;
-    top: 7%;
+    top: 25%;
     left: 35%;
     width: 30%;
     margin-left: auto;
@@ -174,6 +183,7 @@ svg {
   .name-low {
     top: 850px;
     font-size: 3.75em;
+    filter: url("#turbulence2");
   }
 
   .hero-logo {
@@ -190,8 +200,6 @@ svg {
 
 
 @media (max-width: 576px) {
-
-
 
   .name-top {
     position: relative;
@@ -225,4 +233,4 @@ svg {
   .show {
     display: block;
   }
-} */
+}
